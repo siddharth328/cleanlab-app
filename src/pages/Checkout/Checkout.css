@@ -1,0 +1,20 @@
+.checkout-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:start}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pay-opts{display:grid;gap:10px;margin:16px 0 4px}
+.pay-opts label{
+  display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);
+  border-radius:12px;padding:13px 15px;cursor:pointer;transition:all .22s var(--ease);
+}
+.pay-opts label:hover{border-color:var(--accent)}
+.pay-opts label.on{border-color:var(--accent);background:var(--accent-soft)}
+.pay-opts b{font-size:14px;display:block}
+.pay-opts small{color:var(--ink-2);font-size:12px}
+.co-line{display:flex;gap:12px;padding:10px 0;align-items:center}
+.co-line .mini{width:40px;height:40px;border-radius:8px;background:var(--surface);display:grid;place-items:center;padding:5px;flex:none}
+.co-line .info{flex:1;min-width:0}
+.co-line .info b{display:block;font-size:13.5px;font-weight:600}
+.co-line .info small{color:var(--ink-3);font-size:11.5px}
+.sumline{display:flex;justify-content:space-between;font-size:13.5px;color:var(--ink-2);margin-bottom:7px}
+.sumline.total{font-size:17px;font-weight:800;color:var(--ink);margin:12px 0 15px;letter-spacing:-.02em}
+@media (max-width:1000px){.checkout-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.form{grid-template-columns:1fr}}
